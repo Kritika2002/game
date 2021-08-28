@@ -14,7 +14,6 @@ function start()
 }
 
 function keyup(event) {
-  if (startFlag)
   {
     var player = document.getElementById('player');
     if (event.keyCode == 37) {
@@ -40,8 +39,8 @@ function keyup(event) {
 
 
 function move() {
-  if (startFlag) {
     var player = document.getElementById('player');
+    {
     var positionLeft = player.offsetLeft;
     var positionTop = player.offsetTop;
     if (downPressed) {
@@ -95,9 +94,7 @@ function move() {
   }
 }
 
-function keydown(event) {
-  if (startFlag)
-  {
+function keydown(event) {  {
     if (event.keyCode == 37) {
       leftPressed = true;
     }
@@ -127,6 +124,181 @@ setInterval(function () {
   if (startFlag)
   {
     bomb = document.getElementById('bomb1');
+    bomb.style.display = "block";
+    if (bombFlag)
+    {
+      bomb.style.left = Math.floor(Math.random()*(750))+"px";
+      bomb.style.top = Math.floor(Math.random()*(150))+"px";
+      bombFlag = false;
+    }
+    else
+    {
+      if (bomb.offsetTop > 450)
+      {
+        bomb.style.display = "none";
+        bombFlag = true;
+      }
+      else
+      {
+        bomb.style.top = (bomb.offsetTop+1)+'px';
+      }
+    }
+  }  
+}, 10);
+setInterval(function () {
+  if (startFlag)
+  {
+    bomb = document.getElementById('bomb2');
+    bomb.style.display = "block";
+    if (bombFlag)
+    {
+      bomb.style.left = Math.floor(Math.random()*(750))+"px";
+      bomb.style.top = Math.floor(Math.random()*(150))+"px";
+      bombFlag = false;
+    }
+    else
+    {
+      if (bomb.offsetTop > 450)
+      {
+        bomb.style.display = "none";
+        bombFlag = true;
+      }
+      else
+      {
+        bomb.style.top = (bomb.offsetTop+1)+'px';
+      }
+    }
+  }  
+}, 10);
+setInterval(function () {
+  if (startFlag)
+  {
+    bomb = document.getElementById('bomb3');
+    bomb.style.display = "block";
+    if (bombFlag)
+    {
+      bomb.style.left = Math.floor(Math.random()*(750))+"px";
+      bomb.style.top = Math.floor(Math.random()*(150))+"px";
+      bombFlag = false;
+    }
+    else
+    {
+      if (bomb.offsetTop > 450)
+      {
+        bomb.style.display = "none";
+        bombFlag = true;
+      }
+      else
+      {
+        bomb.style.top = (bomb.offsetTop+1)+'px';
+      }
+    }
+  }  
+}, 10);
+setInterval(function () {
+  if (startFlag)
+  {
+    bomb = document.getElementById('bomb4');
+    bomb.style.display = "block";
+    if (bombFlag)
+    {
+      bomb.style.left = Math.floor(Math.random()*(750))+"px";
+      bomb.style.top = Math.floor(Math.random()*(150))+"px";
+      bombFlag = false;
+    }
+    else
+    {
+      if (bomb.offsetTop > 450)
+      {
+        bomb.style.display = "none";
+        bombFlag = true;
+      }
+      else
+      {
+        bomb.style.top = (bomb.offsetTop+1)+'px';
+      }
+    }
+  }  
+}, 10);
+setInterval(function () {
+  if (startFlag)
+  {
+    bomb = document.getElementById('bomb5');
+    bomb.style.display = "block";
+    if (bombFlag)
+    {
+      bomb.style.left = Math.floor(Math.random()*(750))+"px";
+      bomb.style.top = Math.floor(Math.random()*(150))+"px";
+      bombFlag = false;
+    }
+    else
+    {
+      if (bomb.offsetTop > 450)
+      {
+        bomb.style.display = "none";
+        bombFlag = true;
+      }
+      else
+      {
+        bomb.style.top = (bomb.offsetTop+1)+'px';
+      }
+    }
+  }  
+}, 10);
+setInterval(function () {
+  if (startFlag)
+  {
+    bomb = document.getElementById('bomb6');
+    bomb.style.display = "block";
+    if (bombFlag)
+    {
+      bomb.style.left = Math.floor(Math.random()*(750))+"px";
+      bomb.style.top = Math.floor(Math.random()*(150))+"px";
+      bombFlag = false;
+    }
+    else
+    {
+      if (bomb.offsetTop > 450)
+      {
+        bomb.style.display = "none";
+        bombFlag = true;
+      }
+      else
+      {
+        bomb.style.top = (bomb.offsetTop+1)+'px';
+      }
+    }
+  }  
+}, 10);
+setInterval(function () {
+  if (startFlag)
+  {
+    bomb = document.getElementById('bomb7');
+    bomb.style.display = "block";
+    if (bombFlag)
+    {
+      bomb.style.left = Math.floor(Math.random()*(750))+"px";
+      bomb.style.top = Math.floor(Math.random()*(150))+"px";
+      bombFlag = false;
+    }
+    else
+    {
+      if (bomb.offsetTop > 450)
+      {
+        bomb.style.display = "none";
+        bombFlag = true;
+      }
+      else
+      {
+        bomb.style.top = (bomb.offsetTop+1)+'px';
+      }
+    }
+  }  
+}, 10);
+setInterval(function () {
+  if (startFlag)
+  {
+    bomb = document.getElementById('bomb8');
     bomb.style.display = "block";
     if (bombFlag)
     {
